@@ -46,7 +46,24 @@ button {
 
 /* Missing focus styles for interactive elements */
 a:focus, button:focus, input:focus {
-    /* No focus styles defined */
+    /*Changed to orangered as contast to the gray background*/
+    color: orangered;
+    border: orangered, solid, 3px;
+    padding: 2px;
+}
+/*added skip for skip buttons to main content page*/
+.skip {
+    position: absolute;
+    left: -10000px;
+    top:auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip:focus{
+    position:static;
+    width: auto;
+    height: auto;
 }
 
 #robot {
